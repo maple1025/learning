@@ -1,0 +1,368 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"git push	",
+				"Git: Push Current Branch"
+			],
+			[
+				"git pull",
+				"Git: Pull Current Branch"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"git ci",
+				"Git: Commit"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":q",
+				"Set Syntax: SQL"
+			],
+			[
+				"gitadd",
+				"Git: Add..."
+			],
+			[
+				"gits",
+				"Git: Status"
+			],
+			[
+				"tidy",
+				"Tidy HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"isnta",
+				"Git: Reset (unstage) All"
+			],
+			[
+				":",
+				":w - Save"
+			],
+			[
+				"prett",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"pretty",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"prev",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"git push ",
+				"Git: Push"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"gitdi",
+				"Git: Diff Staged"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"fold",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"sypy",
+				"Set Syntax: Python"
+			],
+			[
+				"gistopen",
+				"Gist: Open Gist"
+			],
+			[
+				"gist",
+				"Gist: Create Private Gist"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"syntaxhtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"snippet",
+				"Snippet: html"
+			],
+			[
+				"snnit",
+				"Snippet: QUnit HTML"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				":ins",
+				"Package Control: Install Package"
+			],
+			[
+				"replirb",
+				"SublimeREPL: Ruby IRB (deprecated)"
+			],
+			[
+				"replpython",
+				"SublimeREPL: Python"
+			],
+			[
+				"replpytho",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				":git",
+				"Git: Gitk"
+			],
+			[
+				":insta",
+				"Package Control: Install Package"
+			],
+			[
+				":in",
+				"Package Control: Install Package"
+			],
+			[
+				":install",
+				"Package Control: Install Package"
+			],
+			[
+				"htmlp",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				":reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				":reinde",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/maomao/workspace/sendcloud/sendcloud-web/src/main/webapp/new-ui/password.html",
+		"/home/maomao/workspace/sendcloud/sendcloud-web/src/main/webapp/new-ui/contact.html",
+		"/home/maomao/Downloads/bootstrap-2.1.0-examples/fluid-person-horizontal-form.html",
+		"/home/maomao/workspace/sendcloud/password.html",
+		"/home/maomao/.config/sublime-text-2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/home/maomao/.config/sublime-text-2/Packages/Emmet/README.md",
+		"/home/maomao/workspace/sendcloud/.gitignore",
+		"/home/maomao/workspace/sendcloud/sendcloud-web/src/main/webapp/new-ui/css/bootstrap.css",
+		"/home/maomao/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/maomao/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/maomao/.config/sublime-text-2/Packages/Gist/Gist.sublime-settings",
+		"/home/maomao/.config/sublime-text-2/Packages/User/Gist.sublime-settings",
+		"/home/maomao/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/maomao/workspace/sendcloud/sendcloud-web/src/main/webapp/new-ui/css/bootstrap-responsive.css",
+		"/home/maomao/workspace/sendcloud/sendcloud-web/src/main/webapp/new-ui/data-center.jsp",
+		"/home/maomao/workspace/sendcloud/sendcloud-web/src/main/webapp/new-ui/less2css_tool/SimpLESS.1.4.win.zip",
+		"/home/maomao/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/maomao/.config/sublime-text-2/Packages/User/HTML.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mit",
+			"sub",
+			"div",
+			"\n                                    ",
+			"gitignore",
+			"ctrl+t",
+			"meta",
+			"iam",
+			"meta",
+			"color_scheme",
+			"css",
+			"ls",
+			"vintage"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 124.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"account_inf",
+				"sendcloud-web/src/main/webapp/new-ui/account_info.html"
+			],
+			[
+				"nuw-uiinde.",
+				"sendcloud-web/src/main/webapp/new-ui/index.html"
+			],
+			[
+				"",
+				".gitignore"
+			],
+			[
+				"bo",
+				"css/bootstrap.css"
+			],
+			[
+				".html",
+				"index.html"
+			],
+			[
+				"boots",
+				"css/bootstrap.css"
+			],
+			[
+				"index",
+				"index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/maomao/workspace/sendcloud/sendcloud.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 328.0,
+	"status_bar_visible": true
+}
