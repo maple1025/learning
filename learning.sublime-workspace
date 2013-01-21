@@ -11,9 +11,45 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 375.0,
 		"selected_items":
 		[
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"task",
+				"Tasks: New document"
+			],
+			[
+				"git push",
+				"Git: Push Current Branch"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"gitad",
+				"Git: Add..."
+			],
 			[
 				"git push	",
 				"Git: Push Current Branch"
@@ -31,10 +67,6 @@
 				"Git: Commit"
 			],
 			[
-				":w",
-				":w - Save"
-			],
-			[
 				":q",
 				"Set Syntax: SQL"
 			],
@@ -49,14 +81,6 @@
 			[
 				"tidy",
 				"Tidy HTML"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
 			],
 			[
 				"isnta",
@@ -83,20 +107,12 @@
 				"Git: Push"
 			],
 			[
-				"git c",
-				"Git: Commit"
-			],
-			[
 				"gitdi",
 				"Git: Diff Staged"
 			],
 			[
 				"git add",
 				"Git: Add Current File"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"fold",
@@ -113,10 +129,6 @@
 			[
 				"gist",
 				"Gist: Create Private Gist"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
 			],
 			[
 				"syntaxhtml",
@@ -183,7 +195,7 @@
 				"Indentation: Reindent Lines"
 			]
 		],
-		"width": 602.0
+		"width": 480.0
 	},
 	"console":
 	{
@@ -200,6 +212,9 @@
 	},
 	"file_history":
 	[
+		"/home/maomao/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/maomao/workspace/learning/c/apue/file/file_access",
+		"/home/maomao/Dropbox/docs/GTD/sublime_test.TODO",
 		"/home/maomao/workspace/sendcloud/sendcloud-web/src/main/webapp/new-ui/password.html",
 		"/home/maomao/workspace/sendcloud/sendcloud-web/src/main/webapp/new-ui/contact.html",
 		"/home/maomao/Downloads/bootstrap-2.1.0-examples/fluid-person-horizontal-form.html",
@@ -212,7 +227,6 @@
 		"/home/maomao/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
 		"/home/maomao/.config/sublime-text-2/Packages/Gist/Gist.sublime-settings",
 		"/home/maomao/.config/sublime-text-2/Packages/User/Gist.sublime-settings",
-		"/home/maomao/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/home/maomao/workspace/sendcloud/sendcloud-web/src/main/webapp/new-ui/css/bootstrap-responsive.css",
 		"/home/maomao/workspace/sendcloud/sendcloud-web/src/main/webapp/new-ui/data-center.jsp",
 		"/home/maomao/workspace/sendcloud/sendcloud-web/src/main/webapp/new-ui/less2css_tool/SimpLESS.1.4.win.zip",
@@ -363,6 +377,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 328.0,
+	"side_bar_width": 166.0,
 	"status_bar_visible": true
 }
