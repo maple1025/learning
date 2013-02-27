@@ -1,11 +1,6 @@
 #define MAX_STRINGS 128
 
-typedef struct StringArray
-{
-    char *strings[MAX_STRINGS];
-    int nstrings;
-} *StringArray_T;
-
-extern void ReadStrings(StringArray_T *stringarray, FILE *fp);
-extern void WriteStrings(StringArray_T *stringarray, FILE *fp);
-extern void SortStrings(StringArray_T *stringarray);
+extern void ReadStrings(char **strings, int *nstrings, int maxstrings, FILE *fp);
+extern void WriteStrings(char **strings, int nstrings, FILE *fp);
+extern void SortStrings(char **strings, int nstrings);
+extern int CompareStrings(char *string1, char *string2);
