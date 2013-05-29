@@ -1,15 +1,14 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "linked_list.h"
 
 /*
 Given a list and an int, return the number of times that int occurs
 in the list.
  */
-int Count(struct node* head, int searchFor){
-    struct node * current = head;
+int Count(struct node* head, int searchFor) {
+    struct node* current = head;
     int num = 0;
     while (current != NULL){
-        if (current->data == searchFor){
+        if (current->data == searchFor) {
             num ++;
         }
         current = current->next;
