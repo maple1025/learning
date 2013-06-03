@@ -36,3 +36,17 @@ int Length(struct node* head) {
     return count;
 }
 
+/*
+Print datas in a list in order.
+ */
+
+void Print(struct node* head) {
+    struct node* current = head;
+    printf("List: HEAD -> ");
+    while (current != NULL) {
+       printf("%d -> ", current->data);
+       current = current->next;
+    }
+    printf("NULL\n");
+}
+

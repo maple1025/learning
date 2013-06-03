@@ -25,4 +25,5 @@ void CountTest() {
 
 int main() {
     CountTest();
+    return 0;
 }

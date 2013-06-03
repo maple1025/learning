@@ -9,3 +9,5 @@ struct node {
 struct node* BuildOneTwoThree();
 
 int Length(struct node*);
+
+void Print(struct node*);

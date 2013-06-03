@@ -22,10 +22,14 @@ int Pop(struct node** headRef) {
 void PopTest() {
     struct node* myList = BuildOneTwoThree();
     int len = Length(myList);
+    Print(myList);
     printf("The origin length of the list is: %d\n", len);
     int a = Pop(&myList);
+    Print(myList);
     int b = Pop(&myList);
+    Print(myList);
     int c = Pop(&myList);
+    Print(myList);
     len = Length(myList);
     printf("a, b, c are: %d, %d, %d\n", a, b, c);
     printf("After pop a, b, c, length of the list is: %d\n", len);

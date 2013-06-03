@@ -54,7 +54,7 @@ void TestGetNth() {
 
 void TestGetNth2() {
     struct node* myList = BuildOneTwoThree();
-    int data = GetNth2(myList, 3);
+    int data = GetNth2(myList, 2);
     printf("%d\n", data);
 }
 
