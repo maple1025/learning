@@ -1,35 +1,5 @@
 #include "linked_list.h"
 
-/*
-Given a list that is sorted in increasing order.
-Insert a single node into the correct sorted position in the list.
- */
-
-void SortedInsert(struct node** headRef, struct node* newNode) {
-    struct node* current = *headRef;
-    struct node** currentRef = headRef;
-    int count = 0;
-    while (current != NULL) {
-        if (current->data > newNode->data) {
-            break;
-        }
-        count ++;
-        current = current->next;
-    }
-    if (current != NULL) {
-        count =  count - 1;
-    }
-    current = *headRef;
-    while (count > 0) {
-        currentRef = &(*currentRef)->next;
-        current = current->next;
-        printf("currentRef is %p, *currentRef is %p\n", currentRef, *currentRef);
-        count --;
-    }
-    *currentRef = newNode;
-    newNode->next = current;
-}
-
 void SortedInsertTest() {
     struct node* myList = BuildOneTwoThree();
     struct node* node1 = malloc(sizeof(struct node));

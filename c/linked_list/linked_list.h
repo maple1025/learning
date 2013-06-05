@@ -7,7 +7,10 @@ struct node {
 };
 
 struct node* BuildOneTwoThree();
+struct node* BuildThreeTwoOne();
 
 int Length(struct node*);
 
 void Print(struct node*);
+
+void SortedInsert(struct node**, struct node*);
