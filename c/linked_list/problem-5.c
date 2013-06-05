@@ -9,7 +9,6 @@ that it has the given index.
 void InsertNth(struct node** headRef, int index, int data) {
     struct node* current = *headRef;
     struct node** currentRef =headRef;
-    struct node* next = NULL;
     struct node* newNode = malloc(sizeof(struct node));
     int count = 0;
     while (count < index) {
@@ -19,13 +18,14 @@ void InsertNth(struct node** headRef, int index, int data) {
         } else {
             currentRef = &((*currentRef)->next);
             current = current->next;
+            printf("print the list begin from current in round %d:\n", count);
+            Print(current);
             count ++;
         }
     }
-    next = (*currentRef)->next;
     *currentRef = newNode;
     newNode->data = data;
-    newNode->next = next;
+    newNode->next = current;
 }
 
 void InsertNthTest() {
@@ -34,17 +34,22 @@ void InsertNthTest() {
 
     len = Length(head);
     printf("Before insert, length of the list is: %d\n", len);
-    Print(head);
+    // Print(head);
     InsertNth(&head, 0, 13);
-    Print(head);
+    // Print(head);
     InsertNth(&head, 1, 42);
-    Print(head);
+    // Print(head);
     InsertNth(&head, 2, 5);
-    Print(head);
+    // Print(head);
     InsertNth(&head, 1, 3);
-    Print(head);
+    // Print(head);
+    InsertNth(&head, 0, 9);
+    // Print(head);
+    InsertNth(&head, 4, 11);
+    // Print(head);
     len = Length(head);
     printf("After insert, length of the list is: %d\n", len);
+    Print(head);
 }
 
 int main(int argc, char const *argv[]) {
