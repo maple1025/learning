@@ -8,6 +8,7 @@ all:
 	cc -g problem-5.c linked_list.c linked_list.h -o problem-5
 	cc -g problem-6.c linked_list.c linked_list.h -o problem-6
 	cc -g problem-7.c linked_list.c linked_list.h -o problem-7
+	cc -g problem-8.c linked_list.c linked_list.h -o problem-8
 
 	@echo "Test all ...\n"
 	@echo "======>>\n"
@@ -31,6 +32,9 @@ all:
 	@echo "======>>\n"
 	./problem-7
 	@echo "<<======\n"
+	@echo "======>>\n"
+	./problem-8
+	@echo "<<======\n"
 
 clean:
-	rm -fr problem-1 problem-2 problem-3 problem-4 problem-5 problem-6 problem-7
+	rm -fr problem-1 problem-2 problem-3 problem-4 problem-5 problem-6 problem-7 problem-8
