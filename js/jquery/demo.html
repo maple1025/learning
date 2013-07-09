@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <style>
+    a.test {
+        font-weigth: bold;
+    }
+    </style>
+</head>
+<body>
+    <a href="http://jquery.com">jQuery</a>
+    <script src="jquery-1.10.1.js"></script>
+    <script>
+
+/*    window.onload = function() {
+        alert( "welcome" );
+    }
+
+    $( document ).ready(function() {
+        $( "a" ).click(function( event ) {
+            //alert( "Thanks for visiting!" );
+            alert( "As you can see, the link no longer took you to jquery.com" );
+            event.preventDefault();
+        })
+    })
+*/
+    $( document ).ready(function() {
+        $( "a" ).addClass( "test" );
+    });
+
+    $( document ).ready(function() {
+        $( "a" ).click(function( event ) {
+            event.preventDefault();
+            $( this ).hide( "slow" );
+        });
+    });
+    </script>
+</body>
+</html>
