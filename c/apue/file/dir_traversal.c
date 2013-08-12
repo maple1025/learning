@@ -16,7 +16,7 @@ int
 main(int argc, char *argv[])
 {
     int ret;
-    
+
     if (argc != 2)
         err_quit("usage: ftw <starting-pathname>");
 
@@ -103,6 +103,8 @@ dopath(Myfunc* func)
         if ((ret = dopath(func)) != 0)  /* recursive */
             break;  /* time to leave */
     }
+    printf("string pointed by ptr is %s\n", ptr);
+    printf("ptr[-1] is %c\n", ptr[-1]);
     ptr[-1] = 0;    /* erase everything from slash onwards */
 
     if(closedir(dp) < 0)
@@ -137,7 +139,7 @@ myfunc(const char *pathname, const struct stat *statptr, int type)
         case FTW_NS:
             err_ret("stat error for %s", pathname);
             break;
-            
+
         default:
             err_dump("unknown type %d for pathname %s", type, pathname);
     }
