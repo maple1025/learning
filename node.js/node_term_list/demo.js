@@ -29,4 +29,4 @@ list.on('keypress', function(key, item){
 
 list.on('empty', function(){
     list.stop();
-})
+});
