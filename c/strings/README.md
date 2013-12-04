@@ -1,0 +1,1 @@
+Some string examples come from http://en.wikibooks.org/wiki/C_Programming/Strings
