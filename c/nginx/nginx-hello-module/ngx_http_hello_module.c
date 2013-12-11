@@ -85,6 +85,14 @@ ngx_module_t ngx_http_hello_module = {
 };
 
 
+/*******************************************
+ *  Handlers typically do four things:
+ *      - get the location configuration
+ *      - generate an appropriate response
+ *      - send the header
+ *      - send the body
+ ********************************************/
+
 static ngx_int_t
 ngx_http_hello_handler(ngx_http_request_t *r)
 {
