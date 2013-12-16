@@ -50,7 +50,7 @@ static u_char ngx_hello_string[] = "Hello, world!";
  *
  *      void        *(*create_loc_conf)(ngx_conf_t *cf);
  *      char        *(*merge_loc_conf)(ngx_conf_t *cf, void *prev, void *conf);
- *  }*
+ *  } ngx_http_module_t;
  *****************************************************************************/
 
 
@@ -156,7 +156,18 @@ ngx_http_hello_handler(ngx_http_request_t *r)
     return ngx_http_output_filter(r, &out);
 }
 
-
+/*********************************************************************
+ * Configuration setup function that installs the content handler.
+ *
+ * @param cf
+ *   Module configuration structure pointer.
+ * @param cmd
+ *   Module directives structure pointer.
+ * @param conf
+ *   Module configuration structure pointer.
+ * @return string
+ *   Status of the configuration setup.
+ **********************************************************************/
 static char *
 ngx_http_hello(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
 {
