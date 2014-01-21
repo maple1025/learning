@@ -43,8 +43,13 @@ struct utmp * utmp_next()
         return NULLUT;
 
     recp = (struct utmp *) &utmpbuf[cur_rec * UTSIZE];
-    cur_rec ++;
-    return recp;
+    while (cur_rec <= num_recs){
+        cur_rec ++;
+        recp = (struct utmp *) &utmpbuf[cur_rec * UTSIZE];
+        if (recp->ut_type == USER_PROCESS)
+            return recp;
+    }
+    return NULLUT;
 }
 
 /* read next bunch of records into buffer */
