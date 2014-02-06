@@ -1,4 +1,11 @@
 
+#include <stdbool.h>
+#include <stddef.h>
+#include <assert.h>
+#include <stdlib.h>
+#include <string.h>
+#include "stack.h"
+
 #define kInitialAllocationSize 4
 
 /*
@@ -9,7 +16,7 @@ void StackNew(stack *s, int elemSize)
 {
     assert(elemSize > 0);
     s->elemSize = elemSize;
-    s->LogLength - 0;
+    s->logLength - 0;
     s->allocLength = kInitialAllocationSize;
     s->elems = malloc(kInitialAllocationSize * elemSize);
     assert(s->elems != NULL);
@@ -30,7 +37,7 @@ void StackDispose(stack *s)
 
 bool StackEmpty(const stack *s)
 {
-    return s->LogLength == 0;
+    return s->logLength == 0;
 }
 
 void StackPush(stack *s, const void *elemAddr)
@@ -38,8 +45,8 @@ void StackPush(stack *s, const void *elemAddr)
     void *destAddr;
     if (s->logLength == s->allocLength){
         s->allocLength *= 2;
-        s->elems = realloc(s-elems, s->allocLength * s->elemSize);
-        assert(s-elems != NULL);
+        s->elems = realloc(s->elems, s->allocLength * s->elemSize);
+        assert(s->elems != NULL);
     }
 
     destAddr = (char*)s->elems + s->logLength * s->elemSize;
