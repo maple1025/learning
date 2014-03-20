@@ -1,44 +1,28 @@
 #include <stdio.h>
 #include "list.h"
 
-void PrintList(const List L)
-{
-    Position P, Tmp;
-    P = Header(L);
-    if (IsEmpty(L)){
-        printf("empty list\n");
-    } else {
-        do {
-            P = Advance(P);
-            printf("%d\t", Retrieve(P));
-        } while(!IsLast(P, L));
-        printf("\n");
-    }
-}
-
 int main(int argc, char *argv[])
 {
-    List L;
+    List L, L1, L2;
     Position P;
     int i;
 
     L = MakeEmpty(NULL);
     P = Header(L);
-    PrintList(L);
+    PrintList(L, "\t");
 
     for (i = 0; i < 10; ++i)
     {
-        printf("insert %d\n", i);
         Insert(i, L, P);
         P = Advance(P);
-        PrintList(L);
     }
+    PrintList(L, "\t");
 
     for (i = 0; i < 10; i+=2)
     {
         printf("delete %d\n", i);
         Delete(i, L);
-        PrintList(L);
+        PrintList(L, "\t");
     }
 
     for (i = 0; i < 10; ++i)
@@ -50,16 +34,29 @@ int main(int argc, char *argv[])
 
     L = MakeEmpty(L);
     P = Header(L);
-    PrintList(L);
+    PrintList(L, "\t");
 
     for (i = 0; i < 10; ++i)
     {
-        printf("insert %d\n", i);
         Insert(i, L, P);
         P = Advance(P);
-        PrintList(L);
     }
+    PrintList(L, "\t");
 
     DeleteList(L);
+
+    printf("----- test Append ...\n");
+    L1 = MakeEmpty(NULL);
+    L2 = MakeEmpty(NULL);
+    for (i = 0; i < 10; ++i)
+    {
+        Insert(i, L1, L1);
+        Insert(i*2, L2, L2);
+    }
+    PrintList(L1, "\t");
+    PrintList(L2, "\t");
+    Append(L1, L2);
+    PrintList(L1, "\t");
+    PrintList(L2, "\t");
     return 0;
 }

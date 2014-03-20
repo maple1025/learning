@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "list.h"
 #include "fatal.h"
+#include <string.h>
 
 struct Node
 {
@@ -119,4 +120,65 @@ Position Advance(Position P)
 ElementType Retrieve(Position P)
 {
     return P->Elment;
+}
+
+void PrintList(const List L, char *Delimiter)
+{
+    Position P, Tmp;
+    P = Header(L);
+    if (IsEmpty(L)){
+        printf("empty list\n");
+    } else {
+        do {
+            P = Advance(P);
+            if (strcmp(Delimiter, "\n") == 0){
+                printf("%d\n", Retrieve(P));
+            } else {
+                printf("%d\t", Retrieve(P));
+            }
+        } while(!IsLast(P, L));
+        printf("\n");
+    }
+}
+
+ElementType Max(List L)
+{
+    Position P = Header(L);
+    ElementType max = 0;
+    while(P != NULL){
+        if (max < P->Elment) {
+            max = P->Elment;
+        }
+        P = P->Next;
+    }
+    return max;
+}
+
+/*
+ * Merge L2 into L1
+ */
+void Merge(List L1, List L2)
+{
+    Position P = Header(L1);
+    while (!IsLast(P, L1)){
+        P = Advance(P);
+    }
+    P->Next = First(L2);
+}
+
+/*
+ * Append one element to L
+ */
+void Append(ElementType X, List L)
+{
+    List NewNode;
+    Position P;
+    P = Header(L);
+    while(!IsLast(P, L)){
+        P = Advance(P);
+    }
+    NewNode = malloc(sizeof(struct Node));
+    P->Next = NewNode;
+    NewNode->Elment = X;
+    NewNode->Next = NULL;
 }
