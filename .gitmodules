@@ -1,3 +1,6 @@
 [submodule "py/concurrent_server"]
 	path = py/concurrent_server
 	url = git://github.com/rspivak/csdesign.git
+[submodule "c/build_lisp/mpc"]
+	path = c/build_lisp/mpc
+	url = https://github.com/orangeduck/mpc.git
