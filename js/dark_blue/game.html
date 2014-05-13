@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="game.css" type="text/css" charset="utf-8">
     <script src="game.js" type="text/javascript" charset="utf-8"></script>
+    <script src="game_levels.js" type="text/javascript" charset="utf-8"></script>
 
     <title></title>
     <meta charset="utf-8" />
@@ -16,7 +17,6 @@
     </footer>
 </body>
     <script type="text/javascript" charset="utf-8">
-        var simpleLevel = new Level(simpleLevelPlan);
-        var display = new DOMDisplay(document.body, simpleLevel);
+        runGame(GAME_LEVELS, DOMDisplay);
     </script>
 </html>
